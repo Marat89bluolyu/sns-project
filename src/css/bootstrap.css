@@ -1,16 +1,9 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-.orange {
-  background: #ff8400; }
-
-.blue {
-  background: #1079b6; }
-
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -20,18 +13,6 @@ html {
 
 body {
   margin: 0; }
-
-@font-face {
-  font-family: eurofont;
-  /* ָלÿ רנטפעא */
-  src: url("..fonts/eurofontc.otf");
-  /* ֿףעü ך פאיכף סמ רנטפעמל */ }
-
-@font-face {
-  font-family: eurofont;
-  /* ָלÿ רנטפעא */
-  src: url("..fonts/eurofont-medium.otf");
-  /* ֿףעü ך פאיכף סמ רנטפעמל */ }
 
 article,
 aside,
@@ -219,12 +200,6 @@ template {
 
 [hidden] {
   display: none; }
-
-* {
-  font-family: eurofont; }
-
-.euro-medium {
-  font-family: EurofontMediumC; }
 
 @media print {
   *,
