@@ -1,5 +1,19 @@
-* {
-    font-family: eurofont, Arial, sans-serif;
+@font-face {
+    font-family: Eurofont-C; /* Имя шрифта */
+    src: url('../fonts/eurofontc.otf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: EurofontMedium-C;
+    src: url('../fonts/eurofont-medium.otf');
+}
+
+body {
+    font-family: Eurofont-C;
+}
+
+.euro-medium {
+    font-family: EurofontMedium-C;
 }
 
 .header-inner {
@@ -37,6 +51,11 @@
     background: #e56e0b;
     padding: 12px;
     color: #000;
+
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
 
     &:focus {
         color: #000;
@@ -94,6 +113,7 @@
     position: relative;
     overflow-x: hidden;
 
+
     #prev {
         position: absolute;
         display: block;
@@ -101,6 +121,24 @@
         top: calc(50% - 55px);
         z-index: 2;
         background: none;
+
+        .arrow-wrap {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 45px;
+                left: 4px;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            path {
+                fill: #ff8400;
+            }
+        }
     }
 
     #next {
@@ -108,6 +146,24 @@
         right: -17px;
         top: calc(50% - 55px);
         background: none;
+
+        .arrow-wrap {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 45px;
+                left: 18px;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            path {
+                fill: #ff8400;
+            }
+        }
     }
 
     .message-box-wrap {
@@ -135,7 +191,7 @@
                 padding-right: 25px;
                 padding-bottom: 20px;
                 background: #fff;
-                opacity: 0.6;
+                opacity: 0.9;
                 max-height: 130px;
                 overflow-y: auto;
 
@@ -166,7 +222,7 @@
         z-index: 2;
 
         .slick-active {
-            background: #ff8b00;
+            background: #ff6800;
         }
 
         & li {
@@ -200,6 +256,10 @@
             .left-col {
                 background: #ff8400;
                 cursor: pointer;
+
+                path {
+                    fill: #fff;
+                }
             }
         }
     }
@@ -299,12 +359,13 @@
 }
 
 .content-4 {
-    background: url('../images/content-4.png') no-repeat #eae8e8;
+    background: url('../images/content-4.png') no-repeat;
+    background-size: cover;
+
     .content-title {
         margin-top: 30px;
         margin-bottom: 40px;
         text-align: center;
-        font-weight: 600;
         font-size: 28px;
         line-height: 28px;
     }
@@ -407,7 +468,6 @@
 
     .slider-title {
         font-size: 28px;
-        font-weight: bold;
         text-align: center;
         margin: 45px 0;
     }
@@ -424,20 +484,56 @@
         border-right: solid #fafafa 1px
     }
 
-    #prev-2 {
+    #prev {
         position: absolute;
         display: block;
         left: -17px;
         top: calc(50% - 55px);
         z-index: 2;
         background: none;
+
+        .arrow-wrap {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 45px;
+                left: 4px;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            path {
+                fill: #ff8400;
+            }
+        }
     }
 
-    #next-2 {
+    #next {
         position: absolute;
         right: -17px;
         top: calc(50% - 55px);
         background: none;
+
+        .arrow-wrap {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 45px;
+                left: 18px;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            path {
+                fill: #ff8400;
+            }
+        }
     }
 }
 
@@ -501,6 +597,29 @@
         color: #000;
         font-size: 13px;
         text-align: right;
+    }
+}
+
+.studio {
+    padding: 5px 0;
+    background: #000;
+
+    .date {
+        font-size: 14px;
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    .develop {
+        display: block;
+    }
+
+    .capybara {
+        color: #ff8400;
+        text-decoration: none;
+    }
+    .left-col {
+        margin-right: 10px;
     }
 }
 
@@ -784,5 +903,16 @@
                 background: none;
             }
         }
+    }
+
+    .studio .studio-logo img {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .studio .capybara {
+        font-size: 14px;
+        margin: 13px auto;
     }
 }

@@ -241,9 +241,11 @@ $grid-gutter-widths: (
 ) !default;
 
 // Fonts
+
 //
 // Font, line-height, and color for body text, headings, and more.
 
+$font-family-eurofontc: 'Eurofont-C';
 $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
