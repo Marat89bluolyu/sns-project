@@ -12,6 +12,19 @@ body {
     font-family: Eurofont-C;
 }
 
+h1 {
+    font-size: 26px;
+    color: #000;
+    font-family: EurofontMedium-C;
+    margin-bottom: 35px;
+}
+
+p {
+    font-size: 15px;
+    color: #000;
+    line-height: 19px;
+}
+
 .euro-medium {
     font-family: EurofontMedium-C;
 }
@@ -222,7 +235,7 @@ body {
         z-index: 2;
 
         .slick-active {
-            background: #git ff6800;
+            background: #ff6800;
         }
 
         & li {
@@ -291,13 +304,13 @@ body {
     }
 }
 
-.content-1 {
+.production {
     margin-top: -50px;
     background: url("../images/content-1.png") no-repeat right -292px #f6f6f6;
     border-right: 20px solid #ff8400;
 }
 
-.content-2 {
+.rebuilding {
     background: url("../images/content-2.png") no-repeat;
     background-size: cover;
     border-left: 20px solid #1079b6;
@@ -308,7 +321,7 @@ body {
     }
 }
 
-.content-3 {
+.trust {
     background: url("../images/content-3.png") no-repeat;
     background-size: cover;
 
@@ -358,7 +371,7 @@ body {
     }
 }
 
-.content-4 {
+.delivery {
     background: url('../images/content-4.png') no-repeat;
     background-size: cover;
 
@@ -430,7 +443,7 @@ body {
     }
 }
 
-.content-5 {
+.statistic {
     background: #f6f6f6;
 
     .content-title {
@@ -458,7 +471,7 @@ body {
     }
 }
 
-.second-slider {
+.partners {
     position: relative;
     overflow-x: hidden;
 
@@ -623,6 +636,173 @@ body {
     }
 }
 
+.content-page {
+    position: relative;
+
+    & .container {
+        position: static;
+    }
+}
+
+.sidebar {
+    background: #fafafa;
+    position: static;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 12px;
+        background: url("../images/icons/border-sidebar.png") no-repeat;
+        background-size: cover;
+        z-index: 2;
+    }
+
+    .sidebar-title-wr {
+        background: #f1f1f1;
+    }
+
+    .production-block {
+        position: relative;
+    }
+
+    .sidebar-title {
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 24px;
+        line-height: 27px;
+        color: #000;
+
+        &::before {
+            content: " ";
+            top:0;
+            right: -10px;
+            position: absolute;
+            display: inline-block;
+            height: 100%;
+            width: 1000%;
+            background: #f1f1f1;
+            opacity: 0.4;
+        }
+    }
+
+    .sidebar-navigation {
+        padding: 25px 0;
+    }
+
+    .sidebar-link {
+        display: block;
+        padding-bottom: 15px;
+        font-size: 15px;
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+            font-weight: bold;
+            color: #f78102;
+        }
+    }
+
+    .sidebar-promo {
+        display: block;
+        width: 225px;
+        height: 260px;
+        background: url('../images/cash/sidebar.png') no-repeat;
+        text-decoration: none;
+    }
+
+    .sidebar-promo-title {
+        color: #fff;
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: bold;
+        background: #303030;
+        text-align: center;
+        padding: 25px 0 30px;
+    }
+}
+
+.dynamic-area {
+    .bread-crumbs {
+        margin-top: 30px;
+        margin-bottom: 35px;
+
+        .breadcrumbs-main {
+            text-decoration: underline;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-right: 15px;
+                background: url('../images/icons/icon-square.png')no-repeat;
+            }
+        }
+
+        .breadcrumbs-item {
+            color: #000;
+            text-decoration: none;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 6px;
+                height: 13px;
+                margin-right: 15px;
+                margin-left: 13px;
+                background: url('../images/icons/icon-right-orange.png')no-repeat;
+            }
+        }
+    }
+
+    .about {
+        margin-bottom: 35px;
+    }
+
+    .production-item {
+        margin-bottom: 50px;
+
+        .more-info {
+            text-decoration: underline;
+            color: #ff8400;
+        }
+        &:hover {
+            .left-col {
+                background: #fff;
+                cursor: pointer;
+
+                path {
+                    fill: #ff8400;
+                }
+            }
+
+            .right-col {
+                background: #ff8400;
+                position: relative;
+
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    top: 40%;
+                    left: -20px;
+                    display: inline-block;
+                    border: 10px solid transparent;
+                    border-right: 10px solid #ff8400;
+
+                }
+            }
+
+            .more-info {
+                color: #fff;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1199px) {
     .header-inner {
         height: 180px;
@@ -776,11 +956,11 @@ body {
         }
     }
 
-    .content-2 {
+    .rebuilding {
         background-size: cover;
     }
 
-    .content-3 {
+    .trust {
         .content-items{
             flex-direction: column;
         }
@@ -790,11 +970,11 @@ body {
         }
     }
 
-    .content-4 {
+    .delivery {
         background-size: cover;
     }
 
-    .content-5 {
+    .statistic {
         .single-item {
             .item-text {
                 position: static;
@@ -822,7 +1002,7 @@ body {
             }
     }
 
-    .second-slider {
+    .partners {
         position: relative;
 
         .slider-title {
@@ -864,7 +1044,7 @@ body {
         }
     }
 
-    .content-4 {
+    .delivery {
         .change-city {
             height: auto;
             margin-bottom: 30px;
@@ -877,7 +1057,7 @@ body {
         }
     }
 
-    .second-slider {
+    .partners {
         .single-item {
             height: auto;
 

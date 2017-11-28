@@ -51,7 +51,7 @@ $(function () {
     });
 
     $('.sl-2').slick({
-        appendArrows: $('.second-slider'),
+        appendArrows: $('.partners'),
         prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><div class="arrow-wrap">' +
         '<img src="./images/icons/slider-arrow-left.png" alt="">'+
         '<svg \n' +
