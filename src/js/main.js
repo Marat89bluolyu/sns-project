@@ -4,6 +4,11 @@ $(function () {
         $('.navigation').toggle('fast');
     })
 
+    $('.sidebar-button').click(function (e) {
+        e.preventDefault();
+        $('.sidebar').toggle('fast');
+    })
+
     $('.sl').slick({
         appendArrows: $('.sl'),
         prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><div class="arrow-wrap">' +

@@ -13,10 +13,16 @@ body {
   font-family: Eurofont-C; }
 
 h1 {
-  font-size: 26px;
+  font-size: 28px;
   color: #000;
   font-family: EurofontMedium-C;
   margin-bottom: 35px; }
+
+h3 {
+  font-size: 18px;
+  color: #000;
+  font-family: EurofontMedium-C;
+  margin-bottom: 15px; }
 
 p {
   font-size: 15px;
@@ -442,9 +448,19 @@ p {
     margin-right: 10px; }
 
 .content-page {
-  position: relative; }
+  position: relative;
+  padding-bottom: 50px; }
   .content-page .container {
     position: static; }
+  .content-page .sidebar-button {
+    display: none;
+    text-align: center;
+    height: 50px;
+    background: #ff8400;
+    color: #fff;
+    padding-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 .sidebar {
   background: #fafafa;
@@ -532,6 +548,13 @@ p {
 
 .dynamic-area .about {
   margin-bottom: 35px; }
+  .dynamic-area .about b {
+    color: #4f4f4f; }
+
+.dynamic-area .change-production {
+  padding-top: 35px;
+  margin-bottom: 25px;
+  border-bottom: solid 1px #cfcfcf; }
 
 .dynamic-area .production-item {
   margin-bottom: 50px; }
@@ -556,6 +579,57 @@ p {
       border-right: 10px solid #ff8400; }
   .dynamic-area .production-item:hover .more-info {
     color: #fff; }
+
+.dynamic-area .production-item:nth-child(2n+1) {
+  border-right: 1px solid #cfcfcf; }
+
+.dynamic-area .production-item:last-child {
+  border: none; }
+
+.dynamic-area .call-info img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px; }
+
+.dynamic-area .phone-number {
+  font-size: 16px;
+  font-weight: bold; }
+
+.main-content .about .big-image {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.news-container .date {
+  width: 137px;
+  height: 35px;
+  margin-bottom: 15px;
+  padding-top: 8px;
+  color: #fff;
+  font-family: EurofontMedium-C;
+  background: #ff8400;
+  font-size: 13px;
+  text-align: center; }
+
+.news-container .news-item {
+  margin-bottom: 40px; }
+
+.news-container a {
+  text-decoration: underline; }
+
+.pagination-page {
+  padding-top: 5px;
+  padding-right: 15px; }
+
+.page-item .page-link {
+  color: #000; }
+
+.page-item.disabled {
+  display: none; }
+
+.page-item.active .page-link {
+  background-color: #ff8400;
+  border-color: #ff8400;
+  color: #fff; }
 
 @media screen and (max-width: 1199px) {
   .header-inner {
@@ -587,7 +661,18 @@ p {
     text-align: center; }
   .footer .subfooter {
     width: 100%;
-    text-align: center; } }
+    text-align: center; }
+  .main-content .about .image-wrap img {
+    width: 100%; }
+  .main-content .call-info .phone-number {
+    white-space: nowrap; }
+  .news-container .news-item .date {
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px; }
+  .news-container .news-item img {
+    width: 100%; } }
 
 @media screen and (max-width: 991px) {
   .header-inner {
@@ -656,7 +741,15 @@ p {
   .statistic .single-item .item-text {
     position: static;
     height: auto;
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .main-content .about p {
+    margin-top: 20px;
+    font-size: 18px; }
+  .dynamic-area .production-item:nth-child(2n+1) {
+    border: none; }
+  .call-info p {
+    margin-top: 30px;
+    font-size: 18px; } }
 
 @media screen and (max-width: 767px) {
   .phone-md {
@@ -676,8 +769,26 @@ p {
       padding-left: 50px;
       padding-right: 50px;
       border: none; }
+    .partners .content-page .sidebar-button {
+      display: block; }
   .footer .phone {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .dynamic-area h1 {
+    text-align: center; }
+  .dynamic-area .bread-crumbs {
+    text-align: center; }
+  .content-page .sidebar-button {
+    display: block; }
+  .sidebar {
+    display: none;
+    text-align: center; }
+    .sidebar .sidebar-link {
+      font-size: 18px;
+      padding: 18px 0; }
+    .sidebar .sidebar-promo {
+      margin: 0 auto; }
+  .main-content h1 {
+    margin: 0px auto 35px; } }
 
 @media screen and (max-width: 575px) {
   .main-slider .message-box-wrap .message-box {
@@ -717,4 +828,9 @@ p {
     display: block; }
   .studio .capybara {
     font-size: 14px;
-    margin: 13px auto; } }
+    margin: 13px auto; }
+  .main-content .about p {
+    padding-top: 15px; }
+  .main-content .about .big-image {
+    margin-bottom: 0;
+    margin-top: 0; } }
