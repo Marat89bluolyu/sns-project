@@ -120,7 +120,9 @@ p {
     .nav-link{
         white-space: nowrap;
         color: #000;
-        
+        margin-bottom: 10px;
+
+        &.active-link,
         &:hover,
         &:active,
         &:focus {
@@ -132,8 +134,13 @@ p {
 
 .main-slider {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
+
+    .sl {
+        overflow: hidden;
+        height: 300px;
+    }
 
     #prev {
         position: absolute;
@@ -690,11 +697,17 @@ p {
 
     .sidebar-title {
         position: relative;
+        display: block;
         padding-top: 30px;
         padding-bottom: 20px;
         font-size: 24px;
         line-height: 27px;
         color: #000;
+        text-decoration: none;
+
+        &:hover {
+            color: #ff6800;
+        }
 
         &::before {
             content: " ";
@@ -721,7 +734,6 @@ p {
         text-decoration: none;
 
         &:hover {
-            font-weight: bold;
             color: #f78102;
         }
     }
@@ -749,6 +761,7 @@ p {
     .bread-crumbs {
         margin-top: 30px;
         margin-bottom: 35px;
+        display: flex;
 
         .breadcrumbs-main {
             text-decoration: underline;
@@ -758,23 +771,27 @@ p {
                 display: inline-block;
                 width: 12px;
                 height: 12px;
+                margin-top: -2px;
                 margin-right: 15px;
                 background: url('../images/icons/icon-square.png')no-repeat;
+                vertical-align: middle;
             }
         }
 
         .breadcrumbs-item {
             color: #000;
             text-decoration: none;
+            margin-top: 1px;
 
             &::before {
                 content: "";
                 display: inline-block;
                 width: 6px;
-                height: 13px;
+                height: 14px;
                 margin-right: 15px;
                 margin-left: 13px;
                 background: url('../images/icons/icon-right-orange.png')no-repeat;
+                vertical-align: middle;
             }
         }
     }
@@ -782,8 +799,8 @@ p {
     .about {
         margin-bottom: 35px;
 
-        b {
-            color: #4f4f4f;
+        span {
+            color: #000;
         }
     }
 
@@ -859,8 +876,21 @@ p {
 .main-content {
     .about {
         .big-image {
+            position: relative;
             margin-top: 40px;
             margin-bottom: 40px;
+        }
+
+        .image-description {
+            position: absolute;
+            bottom: 20px;
+            width: 450px;
+            height: 115px;
+            padding: 20px 50px 20px 40px;
+            font-size: 26px;
+            line-height: 24px;
+            color: #2d2d2d;
+            background: #edeeee;
         }
     }
 }
@@ -1193,6 +1223,7 @@ p {
         }
 
         .bread-crumbs {
+            display: block;
             text-align: center;
         }
     }
@@ -1220,6 +1251,11 @@ p {
     .main-content {
         h1 {
             margin: 0px auto 35px;
+        }
+        .about {
+            .image-description {
+                display: none;
+            }
         }
     }
 }
